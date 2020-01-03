@@ -1,0 +1,21 @@
+﻿HTML Forms:
+-Textbox button, dropbox,menu, slider, ...
+
+<form name = "myForm" method="post" action="path/to/some-script.php">
+.....
+</form>
+
+method có 2 dạng:
+	get:là phương thức cái dữ liệu mình gửi sẽ hiển thị trên trình duyệt -> lenght limit -> có khả năng bookmark/view history (Thường cho tìm kiếm)
+	post: là phương thức khi submit dữ liệu thì ko hiển thị trên trình duyệt -> lenght unlimit -> ko có khả năng bookmark/view history (sử dụng cho dữ liệu nhạy cảm như password
+
+action (nói cho form đó biết là cái form đó send tới đâu)
+
+Single-line:
+	<input type="text" name= "" value="This is a text field"/>
+	nếu là password thì type= "password"
+Multi-line
+	<textare name = "Comments">This is a multi-text fields</textarea>
+	có thuộc tính row = " "
+
+HTML Frames:
