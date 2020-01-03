@@ -1,0 +1,32 @@
+﻿HTML Table
+	+Table Rows <tr> </tr> (cần 2 dòng thì sử dụng 2 thẻ <tr>)
+	+Table Collumns (Cells)  <td> </td> (cần 2 cột thì sử dụng 2 thẻ <td>)
+chỉ sd để hiển thị dữ liệu kiểu bảng ko dc sd để tạo layout
+
+<table>
+	<thead>
+		<tr>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</thead>
+	
+	<tfoot>
+		<tr>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tfoot>
+
+	<tbody>
+		<tr>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+
+<colgroup> </colgroup> xét kích thước
+Nested table: Bảng lồng
+cellspacing: khoảng cách giữa 2 cột
+cellpadding: canh chữ nằm giữa khung
