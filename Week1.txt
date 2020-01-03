@@ -1,0 +1,53 @@
+﻿1. T?i sao sd HTML, CSS: chạy dc trên mọi trình duyệt
+2. C?n ch?y 1 trang web c?n gì: Web server, code web, trình duyệt, phần m?m nh?n request (Apache, Nginx)
+
+HTML (Hypertext Markup Language)
+file html thu?n thì duôi htm ho?c html
+HTML Termilogy (Thu?t ng?): 
+	Tags (Thành ph?n nh? nh?t c?a HTML): g?m 1 th? dóng </tag_name> và 1 th? m? <tag_name>
+	Attributes (thuộc tính) d? set size, color, border,... <tag_name attribute_name1 = " " attribute_name2 = " "> <\tag_name>
+		sd nháy dôi "" ho?c nháy don ''
+		Vd: id = " ", class = "a b", name, style, <a href>
+	Element bao gồm thẻ và thuộc tính
+HTML Document Structure: html, head, body, doctype
+	<!DOCTYPE html>
+	<html>
+		<head>
+			ch?a nh?ng d?nh d?ng ko hi?n th? cho ng dùng, giúp cho trình duyệt biết thông tin của trang web
+			<tittle> ABCD </tittle>
+			<meta charset = "utf8> (hiện chữ tiếng việt
+			ch?a d?nh d?ng  style và các khác
+			<link> </link>
+			<script> </script>
+		<\head>
+
+		<body>
+			chứa những th? hiển thị người ng dùng
+		<\body>
+	<\html>
+Các nhóm th?
+	Tag Formating (d?nh d?ng n?i dung)
+		<b> Bold </b> <br>
+		<i> Italiazed </i> <br>
+		<u> Underline </u> <br>
+		<sup> Superscript </sup> <br>
+		<sub> Subscript </sub> <br>
+		<strong> Strong </strong> <br>
+		<em> Emphasized </em> <br>
+		<pre> Preformatted Text </pre> <br>
+	Hyperlink Tags
+		<a href = " " tittle " " alt = "Liên Ket" target = "self/blank"> Link to ...</a>
+	Image Tags
+		<img src = " " alt =" "/>
+	Heading Tags (h1-h6) nên có duy nh?t 1 th? h1
+	Paragraph Tags <p> </p>
+	Section: div and span
+	<li> List
+	ol : theo s?
+	ul: thi?t k? menu (disc ch?m den, circle tròn, square vuông den
+<dl> defination list
+	<dt> defination tittle
+	<dd> defination data
+
+div vs span
+div tạo ra khu vực rõ ràng (logical divison)
