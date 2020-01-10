@@ -3,6 +3,32 @@
 <head>
 	<title>HTML Forms</title>
 	<meta charset="utf-8">
+	<style type="text/css">
+		label{
+			font-weight: bold;
+		}
+		form{
+			border: 3px solid black;
+			border-radius: 5px;
+			width:200px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-right: 20px
+		}
+		p{
+			font-weight: bold;
+		}
+		legend{
+			font-weight: bold;
+		}
+		.odd{
+			color: blue;
+		}
+		.even{
+			color: tomato;
+		}
+	</style>
 </head>
 <body>
 	<center>
@@ -19,17 +45,17 @@
 			<tbody style="background-color: #AFEEEE">
 				<tr>
 					<td>
-						<form name="Test" method="get" action="" style="border: 3px solid black; border-radius: 5px; width:200px; padding-bottom: 20px; padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+						<form name="Test" method="get" action="">
 							<h1> Sign In form </h1>
 						
-							<label for="email">  Email Address </label>
+							<label for="email" class="odd">  Email Address </label>
 							<input type="Email" name="Email" value="" id="email" required="true" />
-							<label for="pass"> Password </label>
+							<label for="pass" class="even"> Password </label>
 							<input type="Password" name= "Password" value="" id="pass"/>
-							<label for="comments"> Example textarea </label>
+							<label for="comments" class="odd"> Example textarea </label>
 							<textarea name = "Comments" rows="5" id="comments"/></textarea>
 
-							<p> Year was born
+							<p class="even"> Year was born
 							<input type="number" name="Year" min="1920" max="2020" >
 							</p>
 
@@ -58,12 +84,14 @@
 							</select>
 							<p></p>
 
-							<input type="reset" name="resetBtn" value="Reset the form">
-							<input type="submit" value="Send">
-							<input type="button" value="Click me">
+							<input type="reset" name="resetBtn" value="Reset the form" style="background-color: coral">
+							<input type="submit" value="Send" style="background-color: coral; margin-left:20px ">
+							
+							<input type="button" value="Click me" style="background-color: coral">
 						</form>
 					</td>
 					<td>
+						<h2> Video</h2>
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/LzujUrSZihc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</td>
 				</tr>
