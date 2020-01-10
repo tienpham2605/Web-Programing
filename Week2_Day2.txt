@@ -9,7 +9,7 @@ method có 2 dạng:
 	get:là phương thức cái dữ liệu mình gửi sẽ hiển thị trên trình duyệt -> lenght limit -> có khả năng bookmark/view history (Thường cho tìm kiếm)
 	post: là phương thức khi submit dữ liệu thì ko hiển thị trên trình duyệt -> lenght unlimit -> ko có khả năng bookmark/view history (sử dụng cho dữ liệu nhạy cảm như password
 
-action (nói cho form đó biết là cái form đó send tới đâu)
+action (nói cho form đó biết là cái form đó send tới đâu) đường dẫn nhận dữ liệu
 
 Single-line:
 	<input type="text" name= "" value="This is a text field"/>
@@ -17,5 +17,6 @@ Single-line:
 Multi-line
 	<textare name = "Comments">This is a multi-text fields</textarea>
 	có thuộc tính row = " "
-
+placeholder :bt có chữ bấm vô để điền chữ thì chữ có sẵn mất
 HTML Frames:
+<iframe>
