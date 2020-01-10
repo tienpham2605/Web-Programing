@@ -1,0 +1,30 @@
+﻿Web Page:1 trang duy nhất thường có đuôi html chứa tài nguyen (html backup, css rule, Javácript code, Images, Other resources (font, audio, video, flash, Silverlight,..)
+
+HTML dùng để định nghĩa nội dung, trình bày thông tin 1 cách có nghĩa.
+CSS làm cho trang web đẹp hơn, định nghĩa màu, font, vị trí, định nghĩa layout.
+Javascript: ngôn ngữ lập trình cho nên tảng web, web động (hiệu ứng), slider.
+
+The Sematic HTML: được dùg để tăng cường tính ngữ nghĩa cho trang web, gúp cho máy tính hiểu dc nội dung của trang web giúp hỗ trợ cho ng dùng. sd thẻ <meta>, dễ đọc bởi dev, parser,...
+
+<header>..</header>: tp mở logo tiêu đề có thể chứa menu.
+<nav>...</nav>: menu
+<main>...</main>: thành phần chính của trang web
+<article>...</article>
+<section> chia phần
+<aside>...</aside> slide bar thường nằm bên trái/phải
+<footer>...</footer>
+
+<detail> + <sumary>
+<meter> + <progress> : tiến trình hoàn thành dc bao nhiêu %
+
+<b> vs <strong>:
+	<b> does not mean anything, thẻ strong làm cho nó nổi hơn mấy chữ khác trong 1 nùi kia (là chỗ nhấn mạnh đối vs máy tính).
+<i> vs <em>:
+
+Tối ưu công cụ tìm kiếm: SEO Search Engine Optimization. là cái cách làm s để cho con robot làm việc hiệu quả nhất, tìm đúng nhất và nhanh nhất. tittle phù hợp vs bài viết. URL phù hợp (Vd: bài viết về ung văn giàu thì trên link page/ung-van-giau). nếu trang web của bạn dc chèn vào các trang web có uy tính thì trang web mình cũng dc xếp rank cao, hình ảnh phải có alt, sd từ khóa trong nội dung sd thẻ <meta>.
+
+Structured Data Markup:  Chú thích, Microdata, RDFa, JSON-LD. (hiển thị đánh giá sao).
+
+SD CSS:
+Selector xd tp muốn approved style
+XD theo tag, specific attribute (id, class)
