@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.tit{
+			text-align: right;
+			font-weight: bold;
+		}
+		#name{
+			width: 440px;
+		}
+		#day{
+			width: 30px;
+		}
+		#month{
+			width: 30px;
+		}
+		#year{
+			width: 60px;
+		}
+		#countryCode{
+			width: 60px;
+		}
+		#areaCode{
+			width: 60px;
+		}
+		#phoneNumber{
+			width: 200px;
+		}
+		textarea{
+			width: 440px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table border="1" width="600px" cellpadding="5">
+			<colgroup>
+				<col width="150px"></colgroup>
+				<col width="450px"></colgroup>
+			</colgroup>
+			<tr>
+				<td class="tit"><label for="name">Last Name</label></td>
+				<td> <input type="text" name="Name" value="" id="name" placeholder=""Nakov /></td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="name">First Name</label></td>
+				<td> <input type="text" name="Name" value="" id="name" placeholder="Svetlin" /></td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="address">Address</label></td>
+				<td><textarea name = "Address" rows="3" id="address" placeholder="17 Hristo Botev Str. floor 3, apt.12" /></textarea></td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="city">City</label></td>
+				<td>
+					<table border="none" cellspacing="5" cellpadding="5">
+						<tr>
+							<td><input type="text" name="City" value="" id="city" placeholder="Kaspichan" /></td>
+							<td class="tit"><label for="state">State</label></td>
+							<td><input type="text" name="State" value="" id="state" placeholder="" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="zipCode">Zip/Postal Code</label></td>
+				<td><input type="text" name="ZipCode" value="" id="zipCode" placeholder="9325" /></td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="country">Country</label></td>
+				<td>
+					<select name="Country" id="country">
+						<option value="Bulgaria"> Bulgaria </option>
+						<option value="Korea"> Korea </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="tit"><label>Phone (country code, area code, number)</label></td>
+				<td>(+ <input type="number" name="CountryCode" id="countryCode" value="" placeholder="359" /> ) <input type="number" name="AreaCode" id="areaCode" value="" placeholder="88" /> - <input type="number" name="PhoneNumber" id="phoneNumber" value="" placeholder="8334343" /> </td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="email">Email Address</label></td>
+				<td><input type="Email" name="Email" value="" id="email" required="true" placeholder="nokov@kaspichan.org" /></td>
+			</tr>
+			<tr>
+				<td class="tit"><label>Birth date</label></td>
+				<td>
+					<label for="month" style="padding-right: 10px">Month</label><input type="number" name="Month" value="" id="month" placeholder="06" style="padding-right: 10px" />
+					<label for="day" style="padding-right: 10px" >Day</label><input type="number" name="Day" value="" id="day" placeholder="14" style="padding-right: 10px" />
+					<label for="year" style="padding-right: 10px">Year (4 digit)</label><input type="number" name="Year" value="" id="year" placeholder="1980" />
+				</td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="gender">Gender</label></td>
+				<td>
+					<select name="Gender" id="gender">
+						<option value="0"> Male </option>
+						<option value="1"> Female </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="tit"><label>Starting date</label></td>
+				<td>
+					<input type="radio" name="StartingDate" value="Spring"/>Spring 2006
+					<input type="radio" name="StartingDate" value="Summer"/>Summer 2006
+				</td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="comments">Comments/Questions</label></td>
+				<td><textarea name = "Comments" rows="4" id="comments" placeholder="Please send me nor information about the lodging" /></textarea></td>
+			</tr>
+			<tr style="background-color: lightblue">
+				<td colspan="2" align="center">
+					<button type="submit">Submit</button>
+					<button type="reset">Clear This Form</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
