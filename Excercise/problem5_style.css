@@ -1,0 +1,30 @@
+body{
+	font-family: arial;
+	color: black;
+}
+table{
+	border-collapse:collapse;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+thead{
+	width:50%;
+	background-color: #59BD06;
+	color: white;
+}
+td{
+	border-right: 1px solid grey;
+}
+.last{
+	border-right: 0px;
+}
+.odd{
+	background-color: white;
+}
+.even{
+	background-color: #ECECD8;
+}
+img{
+	width: 20px;
+	height: auto;
+}
