@@ -1,0 +1,27 @@
+body{
+	background-color: grey;
+}
+.blue{
+	color: blue;
+}
+em{
+	background-color: pink;
+}
+a{
+	color: black;
+	font-weight: bold;
+	background-color: white;
+}
+a:hover{
+	color: white;
+	background-color: black;
+}
+
+.sf-snow-flake {
+position: fixed;
+top: -20px;
+z-index: 99999;
+}
+.sf-snow-anim {
+top: 110%;
+}
