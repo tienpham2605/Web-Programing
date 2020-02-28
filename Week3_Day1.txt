@@ -26,5 +26,6 @@ Tối ưu công cụ tìm kiếm: SEO Search Engine Optimization. là cái cách
 Structured Data Markup:  Chú thích, Microdata, RDFa, JSON-LD. (hiển thị đánh giá sao).
 
 SD CSS:
-Selector xd tp muốn approved style
-XD theo tag, specific attribute (id, class)
+Selector xd tp muốn approved style. XD theo tag, specific attribute (id, class)
+properties (color, font-weight,....)
+value (red,...)
