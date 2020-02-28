@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>HTML Table</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+			color: black;
+		}
+		table{
+			border-collapse:collapse;
+			border-top: 1px solid grey;
+			border-bottom: 1px solid grey;
+		}
+		thead{
+			width:50%;
+			background-color: #59BD06;
+			color: white;
+		}
+		td{
+			border-right: 1px solid grey;
+		}
+		.last{
+			border-right: 0px;
+		}
+		.odd{
+			background-color: white;
+		}
+		.even{
+			background-color: #ECECD8;
+		}
+		img{
+			width: 20px;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<colgroup>
+				<col style="width: 200px" />
+				<col style="width: 150px" />
+				<col style="width: 150px" />
+				<col style="width: 100px" />
+			</colgroup>
+			<thead>
+				<tr>
+					<td> Contact name </td>
+					<td> City </td>
+					<td> Country </td>
+					<td class="last"> Is Promoted</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="odd">
+					<td> Maria Anders </td>
+					<td> Berlin </td>
+					<td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png"> Germany </td>
+					<td class="last"><input type="checkbox" id="isPromoted" name="promoted" value="yes"></td>
+				</tr>
+				<tr class="even">
+					<td> Ana Trujillo </td>
+					<td> México D.F. </td>
+					<td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/2000px-Flag_of_Mexico.svg.png"> Mexico </td>
+					<td class="last"><input type="checkbox" id="isPromoted" name="promoted" value="yes"></td>
+				</tr>
+				<tr class="odd">
+					<td> Antonio Moreno </td>
+					<td> México D.F. </td>
+					<td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/2000px-Flag_of_Mexico.svg.png"> Mexico </td>
+					<td class="last"><input type="checkbox" id="isPromoted" name="promoted" value="yes"></td>
+				</tr>
+				<tr class="even">
+					<td> Thomas Hardy </td>
+					<td> London </td>
+					<td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png"> UK </td>
+					<td class="last"><input type="checkbox" id="isPromoted" name="promoted" value="yes"></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</form>
+</body>
+</html>
