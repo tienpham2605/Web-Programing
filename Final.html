@@ -7,20 +7,22 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <title>Web Programing Project</title>
 
     <style type="text/css">
         body {
-            background-color: white;
             margin: 0;
-            height: 150px;
             background-position: center center;
             background-size: cover;
+            background: linear-gradient(to right, #003399, #66ccff, #003399);
+            <!--background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, purple); -->
         }
         h2{
             font-size: 24px;
+            margin-left: 30px;
         }
 
         .wrap { 
@@ -33,41 +35,69 @@
         .logo{
             width: 100%;
         }
-
+        #colLeft{
+            background-color: white;
+            border-radius: 30px;
+            width: 420px;
+            padding: 30px;
+            margin-right: 10px;
+        }
+        #colCent{
+            background-color: white;
+            border-radius: 30px;
+            width: 420px;
+            padding: 30px;
+            margin-right: 10px;
+        }
+        #colRight{
+            background-color: white;
+            border-radius: 30px;
+            width: 420px;
+            padding: 30px;
+        }
         #nav1 ul {
-            padding-left:100px;
             list-style-type: none;
             text-align: left;
-            z-index: 99;
         }
 
         #nav2 ul {
-            padding-right: 100px;
             list-style-type: none;
             text-align: right;
-            z-index: 99;
         }
 
         #nav1 li {
-            display: inline-block;
+            display: inline;
             width: auto;
             height: auto;
             line-height: 40px;
         }
+        #nav1 a{
+            font-weight: bold;
+            font-size: 16px;
+            color: black;
+            margin-right: 20px;
+        }
 
         #nav2 li {
-            display: inline-block;
+            display: inline;
             width: auto;
             height: auto;
             line-height: 40px;
+        }
+        #nav2 a{
+            font-weight: bold;
+            color: black;
+            font-size: 13px;
+            margin-right: 10px;
         }
 
         #News li .txt a{
             font-size: 12px;
             line-height: 15px;
         }
-
-        #Album{
+        .albumPic{
+            width: 48px;
+            height: auto;
 
         }
 
@@ -79,200 +109,330 @@
             text-align: left;
         }
 
-        .more_icon{
-            float: right;
-            width: 35px;
-            height: 15px;
+        #News .more_icon{
+            width: 30px;
+            height: auto;
+            margin-left: 160px;
         }
-
+        #Album .more_icon{
+            width: 30px;
+            height: auto;
+            margin-left: 190px;
+        }
+        #lastestMV .more_icon{
+            width: 30px;
+            height: auto;
+            margin-left: 115px;
+        }
+        #lastestMV ul{
+            border: 1px solid grey;
+            padding: 20px;
+        }
+        #lastestMV li{
+            display: inline;
+            margin-left: 10px;
+        }
+        .mvTittle{
+            width: 160px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+        #menu{
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .line{
+            margin-left:40px;
+        }
+        #SmTittle{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #SmTittle span{
+            font-size: 24px;
+            font-weight: bold;
+            color: pink;
+        }
+        .fbTimeline ul{
+            border: 1px solid grey;
+            padding: 20px;
+        }
+        footer{
+            background-color: white;
+            margin-top: 30px;
+            border-radius: 30px;
+            padding: 20px;
+        }
+        .footerMenu img{
+            width: 30px;
+            height: auto;
+        }
+        .footerMenu li{
+            margin-right: 20px;
+            display: inline-block;
+        }
+        .footerMenu a{
+            color: grey;
+        }
+        .media a{
+            margin-right: 5px;
+        }
 </style>
 </head>
 <body>
+    <header>
+        <img class="logo" src="https://vfan-phinf.pstatic.net/20190930_109/1569838704455DBiMn_JPEG/3.jpg?type=e1280"/>
+    </header>
     <div class="wrap">
-
-        <div class="row">
-            <div class="col-12">
-                <img class="logo" src="https://vfan-phinf.pstatic.net/20190930_109/1569838704455DBiMn_JPEG/3.jpg?type=e1280"/>
-            </div>
-        </div>
-        <!-- End row -->
-       
-       <div class="row"; style="margin-top: 30px; margin-bottom: 30px">
-            <div class="col-7" id="nav1">
-                <ul>
-                    <li><a href="" style="font-weight: bold; color: black; padding-right: 20px">STAR Home</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; padding-right: 20px">PROFILE</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; padding-right: 20px">DISCOGRAPHY</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; padding-right: 20px">VIDEOS</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; padding-right: 20px">GALLERY</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; padding-right: 20px">EXTRA</a></li>
-                </ul>
-            </div>
-
-           <div cl=ass="col-5" id="nav2">
-                <ul>
-                    <li><a href="" style="font-weight: bold; color: black; font-size: 13px; padding-right: 10px">Notice</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; font-size: 13px; padding-right: 10px">Schedule</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; font-size: 13px; padding-right: 10px">Fanboard</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; font-size: 13px; padding-right: 10px">From Star</a></li>
-                    <li><a href="" style="font-weight: bold; color: black; font-size: 13px; padding-right: 10px">Staff Diary</a></li>
-                </ul>
-            </div> 
-        </div>
-        <!-- End row -->
-
-        <div class="row">
-            <div class="col-4"; id="colLeft">
-                <div id="News">
-                    <div class="row">
-                        <h2> News & Notice</h2>
-                        <div><a href="http://superjunior.smtown.com/Board/List/?kind=1"><img class="more_icon" src="more.PNG"/> </a> </div>
-                    </div> 
-                
+       <div class="col-12">
+           <div class="row" id="menu">
+                <div class="col-8" id="nav1">
                     <ul>
-                        <div class="row">
-                            <div class="dot">
-                                <a href="http://superjunior.smtown.com/Board/Details/7286881"> MBC 2020 설특집 아이돌스타 선 ... </a> 
-                            </div>
-                            <div class="Date"> 2020-01-03 </div>s
-                        </div>
-                        <div class="row">
-                            <div class="dot">
-                                <a href="http://superjunior.smtown.com/Board/List/10134"> 12월 20일 (금) KBS 뮤직뱅크 ‘... </a> 
-                            </div>
-                            <div class="Date"> 2019-12-19 </div>s
-                        </div>
-                        <div class="row">
-                            <div class="dot">
-                                <a href="http://superjunior.smtown.com/Board/Details/7286823"> MBC 2020 설특집 아이돌스타 선...</a> 
-                            </div>
-                            <div class="Date"> 2019-12-11 </div>
-                        </div>
-                        <div class="row">
-                            <div class="dot">
-                                <a href="http://superjunior.smtown.com/Board/Details/7286822"> MBC 2020 설특집 아이돌스타 선...</a> 
-                            </div>
-                            <div class="Date"> 2019-12-11 </div>
-                        </div>
+                        <li><a href="http://superjunior.smtown.com">STAR Home</a></li>
+                        <li><a href="http://superjunior.smtown.com/Profile">PROFILE</a></li>
+                        <li><a href="http://superjunior.smtown.com/Discography">DISCOGRAPHY</a></li>
+                        <li><a href="http://superjunior.smtown.com/Videos">VIDEOS</a></li>
+                        <li><a href="http://superjunior.smtown.com/Gallery">GALLERY</a></li>
+                        <li><a href="http://superjunior.smtown.com/Extras">EXTRA</a></li>
                     </ul>
                 </div>
-                <div id="smtownNow">
-                    <div class="row">
-                        <h2> SMTOWN now</h2>
-                    </div> 
-                </div>
-                   
-            </div>
 
-            <div class="col-4"; id="colCent">
-                <div id="Album">
-                    <div class="row">
-                        <h2> New Album</h2>
-                        <div><a href="http://superjunior.smtown.com/Discography"> <img class="more_icon" src="more.PNG"/> </a> </div>
+               <div class="col-4" id="nav2">
+                    <ul>
+                        <li><a href="">Notice</a></li>
+                        <li><a href="http://superjunior.smtown.com/Schedule">Schedule</a></li>
+                        <li><a href="">Fanboard</a></li>
+                        <li><a href="">From Star</a></li>
+                        <li><a href="">Staff Diary</a></li>
+                    </ul>
                 </div> 
-                <div class="row">
-                    <div class="pic">
-                        <img src="http://socdn.smtown.com/upload/mf/album/images/000/011/496/11496_98x98.jpg" alt="">
-                    </div>
-                    <div class="albumInfor" style="padding-left: 10px">
-                        <div class="dateAlbum">2019-10-14</div>
-                        <div class="albumTittle">
-                            "SUPER JUNIOR The 9th Album [Time_Slip]"
-                            <br>
-                        </div>
-                        <div class="name">
-                            <a onclick="$.ArtistProfile(39);" href="javascript:void(0);">슈퍼주니어</a>
-                        </div>
-                        <div class="btn">
-                            <a href="/Discography" class="btnAlbum">album</a>
-                        </div>
-                    </div>
-                </div>
-                <p>드디어 컴백! 슈퍼주니어, 10월 14일 정규 9집 ‘타임슬립’ 발매!약 10년간의 긴 군백기(군 복무로 인한 공백기)를 마무리한 슈퍼주니어가 드디어...</p>
-                </div>
-
-                <div id="lastestMV">
-                    <div class="row">
-                        <h2> Latest Music Video</h2>
-                        <div> <a href="http://superjunior.smtown.com/Videos"> <img class="more_icon" src="more.PNG"/> </a> </div>
-                    </div>
-                    <ul type="none">
-                        <li>
-                            <div class="pic">
-                                <a href="javascript:$.MusicVideoPlay(1408, 1);"><img src="http://socdn.smtown.com/upload/mf/mv/images/000/001/408/1408_108x78.jpg" alt="SUPER JUNIOR 슈퍼주니어 'SUPER Clap' MV">
-                                    <div class="btnPlay">Play</div>
-                                </a>
-                            </div>
-                            <div class="mvTittle">
-                                SUPER JUNIOR 슈퍼주니어 'SUPER..
-                                <br>
-                            </div>
-                            <div class="mvInfo">
-                                <div class="date">2019-10-18</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pic">
-                                <a href="javascript:$.MusicVideoPlay(1407, 1);"><img src="http://socdn.smtown.com/upload/mf/mv/images/000/001/407/1407_108x78.jpg" alt="SUPER JUNIOR 슈퍼주니어 'SUPER Clap' MV Teaser #2">
-                                    <div class="btnPlay">Play</div>
-                                </a>
-                            </div>
-                            <div class="mvTittle">
-                                SUPER JUNIOR 슈퍼주니어 'SUPER..
-                                <br>
-                            </div>
-                            <div class="mvInfo">
-                                <div class="date">2019-10-10</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pic">
-                                <a href="javascript:$.MusicVideoPlay(1406, 1);"><img src="http://socdn.smtown.com/upload/mf/mv/images/000/001/406/1406_108x78.jpg" alt="SUPER JUNIOR 슈퍼주니어 'SUPER Clap' Motion Graphics Dance Video #Spoiler">
-                                    <div class="btnPlay">Play</div>
-                                </a>
-                            </div>
-                            <div class="mvTittle">
-                                SUPER JUNIOR 슈퍼주니어 'SUPER..
-                                <br>
-                            </div>
-                            <div class="mvInfo">
-                                <div class="date">2019-10-09</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pic">
-                                <a href="javascript:$.MusicVideoPlay(1405, 1);"><img src="http://socdn.smtown.com/upload/mf/mv/images/000/001/405/1405_108x78.jpg" alt="SUPER JUNIOR 슈퍼주니어 The 9th Album &quot;Time_Slip&quot; Highlight Medley">
-                                    <div class="btnPlay">Play</div>
-                                </a>
-                            </div>
-                            <div class="mvTittle">
-                                SUPER JUNIOR 슈퍼주니어 The 9t..
-                                <br>
-                            </div>
-                            <div class="mvInfo">
-                                <div class="date">2019-10-08</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                    
             </div>
+       </div>
+        <!-- End row -->
 
-            <div class="col-4"; id="Facebook">
-                <h2>Star Facebook</h2>
+        <div class="col-12">
+            <div class="row">
+                <div id="colLeft">
+                    <div id="News">
+                        <div class="row">
+                            <h2> News & Notice</h2>
+                            <div><a href="http://superjunior.smtown.com/Board/List/?kind=1"><img class="more_icon" src="more.PNG"/> </a> </div>
+                        </div> 
+                    
+                        <ul>
+                            <div class="row">
+                                <div class="dot">
+                                    <a href="http://superjunior.smtown.com/Board/Details/7286899"> 1월 15일 (수) Mnet ‘너의 목소리가 보여 7’ 녹화 방청신청 안내</a> 
+                                </div>
+                                <div class="date"> 2019-12-11 </div>
+                            </div>
+                            <div class="row">
+                                <div class="dot">
+                                    <a href="http://superjunior.smtown.com/Board/Details/7286881"> MBC 2020 설특집 아이돌스타 선 ... </a> 
+                                </div>
+                                <div class="date"> 2020-01-03 </div>
+                            </div>
+                            <div class="row">
+                                <div class="dot">
+                                    <a href="http://superjunior.smtown.com/Board/List/10134"> 12월 20일 (금) KBS 뮤직뱅크 ‘... </a> 
+                                </div>
+                                <div class="date"> 2019-12-19 </div>
+                            </div>
+                            <div class="row">
+                                <div class="dot">
+                                    <a href="http://superjunior.smtown.com/Board/Details/7286823"> MBC 2020 설특집 아이돌스타 선...</a> 
+                                </div>
+                                <div class="date"> 2019-12-11 </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id="smtownNow">
+                        <div class="row">
+                            <img class="line" src="http://superjunior.smtown.com/Images/smtownnow/line.png">
+                        </div> 
+                        <div class="row" id="SmTittle">
+                            SMTOWN <span>now</span>
+                        </div>
+                    </div>
+                       
+                </div>
+
+                <div id="colCent">
+                    <div id="Album">
+                        <div class="row">
+                            <h2> New Album</h2>
+                            <div><a href="http://superjunior.smtown.com/Discography"> <img class="more_icon" src="more.PNG"/> </a> </div>
+                        </div> 
+                        <div class="row">
+                            <div class="albumPic">
+                                <img src="http://socdn.smtown.com/upload/mf/album/images/000/011/496/11496_98x98.jpg" alt="">
+                            </div>
+                            <div class="albumInfor">
+                                <div class="dateAlbum">2019-10-14</div>
+                                <div class="albumTittle">
+                                    "SUPER JUNIOR The 9th Album [Time_Slip]"
+                                    <br>
+                                </div>
+                                <div class="name">
+                                    <a onclick="$.ArtistProfile(39);" href="javascript:void(0);">슈퍼주니어</a>
+                                </div>
+                                <div class="btn">
+                                    <a href="/Discography" class="btnAlbum">album</a>
+                                </div>
+                            </div>
+                    </div>
+                    <p>드디어 컴백! 슈퍼주니어, 10월 14일 정규 9집 ‘타임슬립’ 발매!약 10년간의 긴 군백기(군 복무로 인한 공백기)를 마무리한 슈퍼주니어가 드디어...</p>
+                    </div>
+
+                    <div id="lastestMV">
+                        <div class="row">
+                            <h2> Latest Music Video</h2>
+                            <div> <a href="http://superjunior.smtown.com/Videos"> <img class="more_icon" src="more.PNG"/> </a> </div>
+                        </div>
+                        <ul type="none">
+                            <div class="row">
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:$.MusicVideoPlay(1408, 1);"><img src="http://socdn.smtown.com/upload/mf/mv/images/000/001/408/1408_108x78.jpg" alt="SUPER JUNIOR 슈퍼주니어 'SUPER Clap' MV">
+                                            <div class="btnPlay">Play</div>
+                                        </a>
+                                    </div>
+                                    <div class="mvTittle">
+                                        SUPER JUNIOR 슈퍼주니어 'SUPER Clap' MV
+                                        <br>
+                                    </div>
+                                    <div class="mvInfo">
+                                        <div class="date">2019-10-18</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:$.MusicVideoPlay(1407, 1);"><img src="http://socdn.smtown.com/upload/mf/mv/images/000/001/407/1407_108x78.jpg" alt="SUPER JUNIOR 슈퍼주니어 'SUPER Clap' MV Teaser #2">
+                                            <div class="btnPlay">Play</div>
+                                        </a>
+                                    </div>
+                                    <div class="mvTittle">
+                                        SUPER JUNIOR 슈퍼주니어 'SUPER Clap' MV Teaser #2
+                                        <br>
+                                    </div>
+                                    <div class="mvInfo">
+                                        <div class="date">2019-10-10</div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="row">
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:$.MusicVideoPlay(1406, 1);"><img src="http://socdn.smtown.com/upload/mf/mv/images/000/001/406/1406_108x78.jpg" alt="SUPER JUNIOR 슈퍼주니어 'SUPER Clap' Motion Graphics Dance Video #Spoiler">
+                                            <div class="btnPlay">Play</div>
+                                        </a>
+                                    </div>
+                                    <div class="mvTittle">
+                                        SUPER JUNIOR 슈퍼주니어 'SUPER Clap' Motion Graphics Dance Video #Spoiler
+                                        <br>
+                                    </div>
+                                    <div class="mvInfo">
+                                        <div class="date">2019-10-09</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:$.MusicVideoPlay(1405, 1);"><img src="http://socdn.smtown.com/upload/mf/mv/images/000/001/405/1405_108x78.jpg" alt="SUPER JUNIOR 슈퍼주니어 The 9th Album &quot;Time_Slip&quot; Highlight Medley">
+                                            <div class="btnPlay">Play</div>
+                                        </a>
+                                    </div>
+                                    <div class="mvTittle">
+                                        SUPER JUNIOR 슈퍼주니어 The 9th Album "Time_Slip" Highlight Medley
+                                        <br>
+                                    </div>
+                                    <div class="mvInfo">
+                                        <div class="date">2019-10-08</div>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                        
+                </div>
+
+                <div id="colRight">
+                    <div id="Facebook">
+                        <div class="fbTimeline">
+                            <h2>Star Facebook</h2>
+                            <ul type="none">
+                                <li class type="display: list-item;">dhdh</li>
+                                <li class type="display: list-item;">shdhs</li>
+                                <li class type="display: list-item;">dshsh</li>
+                                <li class type="display: list-item;">hsdsdh</li>
+                                <li class="last" type="display: list-item;">sh</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End row -->
-</div>
+        
+        <footer>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="footerMenu">
+                            <ul type="none">
+                                <li>
+                                    <a href="http://www.smtown.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/SM_Entertainment_Logo.svg/1200px-SM_Entertainment_Logo.svg.png"/></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" onclick="$.SignIn();">로그인</a>
+                                </li>
+                                <li>
+                                    <a href="https://membership.smtown.com/" target="_blank">희원기입</a>
+                                </li>
+                                <li>
+                                    <a href="https://membership.smtown.com/Faq" target="_blank">고객섹터</a>
+                                </li>
+                                <li>
+                                    <a href="https://membership.smtown.com/Policy/Terms" target="_blank">이용 약관</a>
+                                </li>
+                                <li>
+                                    <a href="https://membership.smtown.com/Policy/Privacy" target="_blank">개인정보취급방침</a>
+                                </li>
+
+                                <li class="media">
+                                    <a href="#">BGM</a>
+                                    <a href="#">
+                                        <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#"><img class="ft_playeq" src="http://superjunior.smtown.com/Images/common/foot_btn_playeq.gif" alt="eq"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="preVersion">
+                            <strong><em>Previous Version</em></strong>
+                            <a href="#">
+                        
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            
+        </footer>  
+
+        <!-- End row -->
+    </div>
 
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
