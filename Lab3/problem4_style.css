@@ -1,0 +1,29 @@
+body{
+	background-color: dimgrey;
+	color: #DCDCDC;
+	font-family: arial;
+}
+h1{
+	font-size: 25px;
+}
+.h{
+	font-style: italic;
+}
+.dot{
+	color: green;
+	font-size: 24px;
+}
+.info{
+	color: red;
+	font-weight: bold;
+}
+.email{
+	font-weight: bold;
+}
+.state{
+	font-weight: bold;
+}
+.status{
+	color: orange;
+	font-weight: bold;
+}
