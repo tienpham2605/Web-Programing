@@ -18,5 +18,13 @@ Multi-line
 	<textare name = "Comments">This is a multi-text fields</textarea>
 	có thuộc tính row = " "
 placeholder :bt có chữ bấm vô để điền chữ thì chữ có sẵn mất
+
+Input:
+	text (textbox)
+	email
+	submit (button)
+	radio
+	checkbox
+	dropdown (<select><option>)
 HTML Frames:
 <iframe>
