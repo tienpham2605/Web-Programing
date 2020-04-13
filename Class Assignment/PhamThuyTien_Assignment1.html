@@ -3,18 +3,8 @@
 <head>
 	<title>Layout Assignment</title>
 	<meta charset="utf-8">
-	
-	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<style type="text/css">
-		.wrap { 
-            width: 100%; 
-            max-width: 1280px; 
-            margin-left: auto;
-            margin-right: auto;
-        }
 		header{
 			border: 2px solid #808080;
 			background-color: #808080;
@@ -29,13 +19,21 @@
 			padding: 5px;
 			margin-bottom: 5px;
 		}
-		.col-3{
-			padding-top: 20px;
-			padding-bottom: 20px;
+		section:after{
+			clear: both;
+			content: "";
+			display: block;
 		}
-		.col-7{
-			padding-top: 20px;
-			padding-bottom: 20px;
+		aside{
+			width: 25%;
+			float: left;
+
+		}
+		.main{
+			width: 75%;
+			float: right;
+			box-sizing: border-box;
+			padding-left: 20px;
 		}
 		footer{
 			border: 2px solid #808080;
@@ -49,21 +47,21 @@
 <body>
 	<div class="wrap">
 		<header>Công ty ABC</header>
-		<div class="row">
-			<div class="col-3">
+		<section>
+			<aside>
 				<ul type="none">
 					<li>Danh mục 1</li>
 					<li>Danh mục 2</li>
 					<li>Danh mục 3</li>
 					<li>Danh mục 4</li>
 				</ul>
-			</div>
-			<div class="col-7">
+			</aside>
+			<div class="main">
 				<h2>Tiêu đề</h2>
 				<p>Theo ông Phu, Việt Nam đã làm "sớm và quyết liệt". Ngay từ giai đoạn đầu của dịch, Việt Nam đã triển khai biện pháp mạnh mẽ là tập trung giám sát người nhập cảnh, đầu tiên là từ Trung Quốc, Hàn Quốc, sau đó đến châu Âu, Mỹ. Khi số người nhập cảnh giảm thì số ca nhiễm trong nhóm này cũng giảm.</p>
 				<p>Ở giai đoạn này, ông Phu đánh giá Việt Nam đã kiểm soát và xét nghiệm người nhập cảnh nhiều, nhưng xét nghiệm sàng lọc trong cộng dồng chưa nhiều. "Cần đảy mạnh xét nghiệm trong cộng đồng, vì có xét nghiệm mới phát iện nhiều, từ đó có cơ sở đánh giá được tình hình dịch", ông Phu nói.</p>
 			</div>
-		</div>
+		</section>
 		<footer>Footer Text</footer>
 	</div>
 </body>
