@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental Exercise - Number Conversion</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		<!-- Convert floating point to integer number -->
+		let valueDouble = 8.75;
+		let valueInt = valueDouble | 0;
+		alert("The integer value of " + valueDouble + " is " + valueInt);
+
+		<!-- Convert to integer number with rounding-->
+		let valueDouble = 8.75;
+		let roundedInt = (valueDouble + 0.5) | 0;
+		alert("The rounded integer value of " + valueDouble + " is " + roundedInt);
+
+		<!-- Convert string to integer-->
+		let str = '1234';
+		let i = str | 0 + 1;
+		alert("The integer of " + str + " is " + i);
+
+	</script>
+</body>
+</html>
