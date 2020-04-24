@@ -1,0 +1,6 @@
+﻿Hàm là 1 block lệnh dùng để thực thi 1 tác vụ nào đó
+Cho phép lập trình viên triển khai 1 chương trình lớn
+Hàm giúp: dễ quản lý, tổ chức chươn trình tốt hưn, dễ đọc dễ hiểu, nâng cao tính trừu tượng, tránh lặp code
+for of cho object
+for in cho range
+có thể sd nhiều return nhưng chỉ trả về 1 giá trị
