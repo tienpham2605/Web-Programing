@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Fundamental Exercise - Clock Example/Timer Example</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id="Clock"></p>
+	<script type="text/javascript">
+		function timeFunc(){
+			var now = new Date();
+			var hour = now.getHours();
+			var min = now.getMinutes();
+			var sec = now.getSeconds();
+			document.getElementById("Clock").innerHTML = "" + ":" + min + ":" + sec;
+		}
+		setInterval(timeFunc, 1000);
+	</script>
+</body>
+</html>
