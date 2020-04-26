@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function Human (_ID, _productName, _image, _price, _discountPrice){
+			return{
+				ID : _ID,
+				productName : _productName,
+				image : _image,
+				price : _price,
+				discountPrice : _discountPrice,
+				toString :function(){
+					console.log(this.ID + ' ' + this.productName + ' ' + this.image + ' ' + this.price + ' ' + this.discountPrice)
+				}
+			}
+		}
+		let a = Human('1', 'Nồi cơm điện', 'Hình ảnh', '5.000.000 đ', '2.000.000 đ');
+		let b = Human('2', 'Máy giặt', 'Hình ảnh', '10.000.000 đ', '8.000.000 đ');
+		let c = Human('3', 'Máy lạnh', 'Hình ảnh', '12.000.000 đ', '9.000.000 đ');
+		let d = Human('4', 'TV', 'Hình ảnh', '15.000.000 đ', '12.000.000 đ');
+		let e = Human('5', 'Laptop', 'Hình ảnh', '22.000.000 đ', '17.000.000 đ');
+
+		var productList = [a,b,c,d,e];
+		printList(productList);
+		function printList(arr){
+			for (var i = 0; i <arr.length; i++) {
+				console.log(arr[i]);
+			}
+		}
+	</script>
+</body>
+</html>
