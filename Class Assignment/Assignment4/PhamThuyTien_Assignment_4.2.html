@@ -19,7 +19,7 @@
 		function findAndDelete(ds,key){
 			for(var i = 0; i < ds.length; i++){
 				if (ds[i] == key) {
-					ds.splice(i);
+					ds.splice(i,1);
 				}
 			}
 		}
