@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Regex Examples</title>
+    <script type="text/javascript">
+
+
+	    let academyRegex = /telerik\s(software\s|algo\s|kids\s)?academy/gi;
+	    let textSlide35 = 'George is studying JavaScript at Telerik Academy, while Jimmy goes to Telerik Kids Academy.';
+	    let isMatch = academyRegex.test(textSlide35);
+	    let matches = textSlide35.match(academyRegex);
+	    while (currentMatch = academyRegex.exec(textSlide35)) {
+	        console.log(currentMatch);
+	    }
+
+
+	    let textSlide36 ='   text   with    lots of      spaces\n'+'     and lots of tabulations    ';
+	    console.log(textSlide36.replace(/\s\s+/g, ' '));
+	    let expression ='4+5*count-initialCount+1';
+	    let operands =expression.split(/\+|\*|-/);
+	    console.log(operands);
+
+
+	    let textSlide37 ='JavaScrept is awesome!';
+	    let index =textSlide37.search(/is/);
+	    console.log(index);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
